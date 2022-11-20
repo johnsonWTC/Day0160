@@ -1,0 +1,14 @@
+<table>
+    <th>Phone name</th>
+    <th>Phone model</th>
+    <th>Select</th>
+    <tr *ngFor="let phone of phonelist">
+        <td>{{phone.phoneName}}</td>
+        <td>{{phone.phoneModel}}</td>
+        <td>
+            <button (click)="PhoneWasSelected(phone)">
+                select
+            </button>
+        </td>
+    </tr>
+</table>

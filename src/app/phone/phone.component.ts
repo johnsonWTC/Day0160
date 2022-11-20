@@ -10,7 +10,11 @@ export class PhoneComponent implements OnInit {
 
   constructor() { }
 
-  phone: phone [] = []
+  phone: phone [] = [];
+
+  ReturnedPhone(phone: phone){
+    alert("this is the "+ phone.phoneName)
+  }
 
   ngOnInit(): void {
 this.phone = [
